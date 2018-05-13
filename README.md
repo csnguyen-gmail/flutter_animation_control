@@ -12,7 +12,9 @@ The screen have 2 main widgets, the parent who own that app state, and the child
 
 Something like below:
 
-![flutter_animation_control](./blob/flutter_animation_control.gif)
+<p align="center">
+  <img src="/blob/flutter_animation_control.gif">
+</p>
 
 ### Approach1: animation is triggered in InitState of child State.
 
