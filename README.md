@@ -1,8 +1,5 @@
 # flutter_animation_testing
 
-A new Flutter application.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+<p align="center">
+  <img src="/blob/flutter_animation_control.gif">
+</p>
