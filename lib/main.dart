@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//// APPROACH NG - using initState
+//// Approach1: animation is triggered in InitState of child State.
 //class AnimatedText extends StatefulWidget {
 //  AnimatedText({this.text});
 //  final String text;
@@ -66,9 +66,13 @@ import 'package:flutter/material.dart';
 //  }
 //}
 
-//// APPROACH NG - using UniqueKey
+//// Approach2: try to get InitState is called with UniqueKey
 //class AnimatedText extends StatefulWidget {
-//  AnimatedText({Key key, this.text}):super(key:key);
+//  AnimatedText({
+//    Key key,
+//    this.text
+//  }):super(key:key);
+//
 //  final String text;
 //  @override
 //  _AnimatedTextState createState() => new _AnimatedTextState();
@@ -138,7 +142,7 @@ import 'package:flutter/material.dart';
 //  }
 //}
 
-//// APPROACH NG - using GlobalKey
+//// Approach4: move AnimationController to parent
 //class AnimatedText extends StatefulWidget {
 //  AnimatedText({Key key, this.text}):super(key:key);
 //  final String text;
@@ -227,7 +231,7 @@ import 'package:flutter/material.dart';
 //  }
 //}
 
-//// APPROACH NG - using GlobalKey
+//// APPROACH NG - move AnimationXController to parent
 //class AnimatedText extends StatelessWidget {
 //  AnimatedText({
 //    this.text,
@@ -302,7 +306,7 @@ import 'package:flutter/material.dart';
 //  }
 //}
 
-// APPROACH OK - using didUpdateWidget
+// Final: didUpdateWidget function for the rescue
 class AnimatedText extends StatefulWidget {
   AnimatedText({this.text});
   final String text;
