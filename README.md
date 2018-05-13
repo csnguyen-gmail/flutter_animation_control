@@ -176,7 +176,7 @@ class _MainWidgetState extends State<MainWidget> {
       ),
 //...
 ```
-We can het child state from GlobalKey
+We can get child state from GlobalKey
 
 **Child**
 ```dart
